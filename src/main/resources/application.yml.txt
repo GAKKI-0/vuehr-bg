@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: vuehr
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    name:
+    url: jdbc:mysql://localhost:3306/vhr?serverTimezone=UTC
+    username: ***
+    password: ***
+
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.example.vuehr.base.entity
+
+server:
+  port: 8080
+
